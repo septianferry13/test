@@ -15,13 +15,7 @@ function reqotp($no){
         flush();
     }
 
-print "\033[0;32m 
-===============+++++===================
- Github : kumpulanremaja
- facebook : KumpulanRemaja
- Web : kumpulanremaja.com
-===============+++++===================
-\n Minta Kode OTP Telkomsel \n " ;
+print "\n Minta Kode OTP Telkomsel \n " ;
 echo " \033[36;1m Nomor 62xx: ";
 $nomor = trim(fgets(STDIN));
 $res = file_get_contents("https://testnanikore.000webhostapp.com/api.php?nope=$nomor&reqotp");
